@@ -1,0 +1,35 @@
+# FastAPI and server
+fastapi==0.115.6
+uvicorn[standard]==0.34.0
+python-multipart==0.0.20
+sse-starlette==2.2.1
+
+# Database
+sqlalchemy==2.0.36
+asyncpg==0.30.0
+alembic==1.14.0
+pgvector==0.3.6
+
+# Celery and Redis
+celery[redis]==5.4.0
+redis==5.2.1
+
+# LangChain and AI
+langchain==0.3.14
+langchain-google-genai==2.0.8
+langchain-community==0.3.14
+langchain-text-splitters==0.3.4
+
+# Document parsing
+pypdf==5.1.0
+python-magic==0.4.27
+
+# Utilities
+pydantic==2.10.4
+pydantic-settings==2.7.1
+python-dotenv==1.0.1
+
+# Testing
+pytest==8.3.4
+pytest-asyncio==0.25.0
+httpx==0.28.1
