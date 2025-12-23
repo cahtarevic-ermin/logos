@@ -66,7 +66,7 @@ class DocumentChunk(Base):
     content: Mapped[str] = mapped_column(Text, nullable=False)
     chunk_index: Mapped[int] = mapped_column(Integer, nullable=False)
     embedding: Mapped[list[float]] = mapped_column(
-        Vector(768), nullable=True
+        Vector(3072), nullable=True
     )  # Gemini embedding dimension
     chunk_metadata: Mapped[dict] = mapped_column(JSONB, default=dict)
 
