@@ -49,7 +49,7 @@ def upgrade() -> None:
         sa.Column("document_id", sa.UUID(), nullable=False),
         sa.Column("content", sa.Text(), nullable=False),
         sa.Column("chunk_index", sa.Integer(), nullable=False),
-        sa.Column("embedding", Vector(768), nullable=True),
+        sa.Column("embedding", Vector(3072), nullable=True),
         sa.Column(
             "chunk_metadata", postgresql.JSONB(astext_type=sa.Text()), nullable=False
         ),

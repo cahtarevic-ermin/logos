@@ -14,8 +14,8 @@ class Settings(BaseSettings):
     app_name: str = "logos"
     debug: bool = False
 
-    # Database
-    database_url: str = "postgresql+asyncpg://logos:logos@localhost:5432/logos"
+    database_url: str = "postgresql+asyncpg://logos:logos@localhost:5433/logos"
+    database_url_sync: str = "postgresql+psycopg2://logos:logos@localhost:5433/logos"
 
     # Redis
     redis_url: str = "redis://localhost:6379/0"

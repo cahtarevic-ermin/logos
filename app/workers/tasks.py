@@ -18,9 +18,7 @@ from app.core.prompts import (
 
 settings = get_settings()
 
-# Sync engine for Celery (Celery doesn't play well with async)
-sync_database_url = settings.database_url.replace("+asyncpg", "+psycopg2")
-sync_engine = create_engine(sync_database_url)
+sync_engine = create_engine(settings.database_url_sync)
 SyncSession = sessionmaker(bind=sync_engine)
 
 
