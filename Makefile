@@ -46,3 +46,8 @@ shell:
 # Check status
 status:
 	docker compose ps
+
+dev-rebuild:
+	docker compose build --no-cache
+	docker compose down
+	docker compose up -d
